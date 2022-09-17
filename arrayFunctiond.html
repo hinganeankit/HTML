@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+            var arr=[];
+            var arr1=[1,2,3,4,5];
+            for(var i=0;i<5;i++)
+            {
+                arr[i]=parseInt(prompt("Enter no"));
+            }
+            document.write("<h2>Array Element</h2>");
+            for(var i=0;i<5;i++)
+            {
+                document.write("<h4>"+arr[i]+"</h4>");
+            }
+            var n=parseInt(prompt("Enter no"));
+            arr.push(n);
+            document.write("<h3>Array After insertion"+arr+"</h3");
+            document.write("<h3>Element :"+arr.pop()+"</h3>");
+            document.write("<h3>Array After removing element"+arr+"</h3>");
+            document.write("<h3>Element :"+arr.shift()+"</h3>");
+            document.write("<h3>Array After removung element"+arr+"</h3>");
+
+            n=parseInt(prompt("enter a no"));
+            var n1=parseInt(prompt("enter no"));
+            arr.unshift(n,n1);
+            document.write("<h3>Array After insertion"+arr+"</h3>");
+            arr=arr.concat(arr1);
+            document.write("<h3>Array After concat"+arr+"</h3>");
+            document.write("<h3>Array reverse"+arr.reverse()+"</h3");
+            document.write("<h3>Sub Array"+arr.slice(2,5)+"</h3");
+            </script>
+
+    </body>
+</html>
